@@ -282,3 +282,14 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+ArrayDemo/MyArray/MyArray.vcxproj.filters
+*.vcxproj
+ArrayDemo/MyArray/ReadMe.txt
+*.txt
+Initialization/InitialValue/stdafx.cpp
+*.h
+MyFirstCpp/MyFirstCpp.sln
+*.filters
+Initialization/Initialization.sln
+*.sln
+ArrayDemo/MyArray/stdafx.cpp
