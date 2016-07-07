@@ -14,6 +14,15 @@ int main()
 	dArray[2] = 4.2;
 
 	cout << "The average is " << (dArray[0] + dArray[1] + dArray[2]) / 3 << "\n";
+
+	// The element in the array which are not initialized are set to 0
+	int iArray[5] = { 7, 4, 5 };
+	cout << iArray[0] << endl;
+	cout << iArray[1] << endl;
+	cout << iArray[2] << endl;
+	cout << iArray[3] << endl;
+	cout << iArray[4] << endl;
+	
 	return 0;
 }
 
