@@ -45,6 +45,15 @@ int main()
 	int legs[Animals::MAX_ANIMALS] = { 2, 4, 4, 4, 2, 0 };
 	cout << "An elephant has " << legs[Animals::ELEPHANT] << " legs. \n";
 
+	
+
+
+
+
+
+
+
+
 	return 0;
 }
 
