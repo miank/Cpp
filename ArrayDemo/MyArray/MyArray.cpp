@@ -6,6 +6,20 @@
 
 using namespace std;
 
+namespace Animals
+{
+	enum Animals
+	{
+		CHICKEN,
+		DOG,
+		CAT,
+		ELEPHANT,
+		DUCK,
+		SNAKE,
+		MAX_ANIMALS
+	};
+}
+
 int main()
 {
 	short m_aPrime[6];  // hold the first 5 elements
@@ -27,6 +41,10 @@ int main()
 
 	cout << "The average is of m_aMyArray " << (m_aMyArray[0] + m_aMyArray[1] + m_aMyArray[2]) / 3 << endl;
 	
+	// Passing enum  to initialize array
+	int legs[Animals::MAX_ANIMALS] = { 2, 4, 4, 4, 2, 0 };
+	cout << "An elephant has " << legs[Animals::ELEPHANT] << " legs. \n";
+
 	return 0;
 }
 
