@@ -1,4 +1,4 @@
-// SizeOf.cpp : Defines the entry point for the console application.
+// SizeOf.cpp : Size of to calculate the array
 //
 
 #include "stdafx.h"
