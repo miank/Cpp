@@ -293,3 +293,6 @@ MyFirstCpp/MyFirstCpp.sln
 Initialization/Initialization.sln
 *.sln
 ArrayDemo/MyArray/stdafx.cpp
+Array/SumOfPrime/stdafx.cpp
+MyFirstCpp/HelloWorld/stdafx.cpp
+ArrayType/ArrayDoubles/stdafx.cpp

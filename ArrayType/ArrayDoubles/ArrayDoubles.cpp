@@ -23,6 +23,22 @@ int main()
 	cout << iArray[3] << endl;
 	cout << iArray[4] << endl;
 	
+	// Initialze array using enums
+	enum Student
+	{
+		KENNY, // 0
+		KYLE, // 0
+		STAN, // 2
+		BUTTERS, // 3
+		CARTMAN, // 4
+		WENDY, // 5
+		MAX_STUDENTS // 6
+	};
+
+	int testScores[Student::MAX_STUDENTS];
+	testScores[Student::STAN] = 76;
+
+	cout << testScores[2] << endl;
 	return 0;
 }
 
