@@ -31,7 +31,20 @@ int _tmain(int argc, _TCHAR* argv[])
 	                         // leaving space for null character.
 	cout << "Enter your name " << cName << endl;
 	
+	// Manipulating C Style Strings
+	char cSource[] = "Copy this !";
+	char cDest[50];
 
+	// To avoid the overflow of characters 
+	strncpy_s(cDest, cSource, 49);
+	cout << "Destination " << cDest; // Print "Copy this"
+
+	// strlen() function which retuns the length of the string
+
+	char cMyName[20] = "Alex";
+	cout << "My name is " << cMyName << endl;
+	cout << cMyName << " has " << strlen(cName) << " letters. \n";
+	cout << cMyName << " has " << sizeof(cName) << " characters in the array. \n";
 
 	return 0;
 }
