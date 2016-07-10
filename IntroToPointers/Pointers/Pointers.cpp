@@ -26,11 +26,36 @@ int main()
 	// E.g. int *a;
 	// E.g. int* doSomething();
 
-	int value = 5;
-	int *ptr = &value;
-	cout << "Value address " << &value << "\n";
+	int iValue(5);
+	int *ptr = &iValue;
+	cout << "Value address " << &iValue << "\n";
 	cout << ptr << "\n";
 	
+	// Dereferencing Operators
+	cout << &iValue << endl;
+	cout << iValue << endl;
+
+	int *iPtr = &iValue;
+	cout << iPtr << endl;
+	cout << *iPtr << endl;
+
+	// Pointers can be reassigned.
+	int iValue1(5);
+	int iValue2(7);
+
+	int *iPtr2;
+
+	iPtr2 = &iValue1;
+	cout << *iPtr2 << endl;
+	iPtr2 = &iValue2;
+	cout << *iPtr2 << endl;
+	
+	// Size of Pointers remain same because it just a memory address.
+	char *cPtr;
+	int *iPtr;
+	cout << sizeof(cPtr);
+	cout << sizeof(iPtr);
+
 	return 0;
 }
 
