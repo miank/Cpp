@@ -56,6 +56,8 @@ int main()
 	cout << sizeof(cPtr);
 	cout << sizeof(iPtr);
 
+
+
 	return 0;
 }
 
