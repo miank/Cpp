@@ -21,6 +21,24 @@ public:
 	}
 };
 
+// Employee inherits Person class
+class Employee : public Person
+{
+public:
+	std::string m_strEmployeeName;
+	double m_dHourSalary;
+	long m_lEmployeeID;
+
+	Employee(std::string strEmployeeName, double dHourSalary, long lEmployeeId)
+		: m_strEmployeeName(strEmployeeName), m_dHourSalary(dHourSalary), m_lEmployeeID(lEmployeeId) { }
+
+	double GetHourSalary() { return m_dHourSalary; }
+	void PrintNameSalary()
+	{
+		std::cout << m_strEmployeeName << ": " << m_dHourSalary << std::endl;
+	}
+};
+
 // BaseballPlayer class
 class BaseBallPlayer : public Person
 {
@@ -34,6 +52,7 @@ int main()
 {
 	// Person Object 
 	Person objPerson("John", 22, "True");
+	// BaseBallPlayer Object
 	BaseBallPlayer objBaseBall(33.00, 240);
 	objBaseBall.m_strName = "Joee";
 	std::cout << objBaseBall.GetName() << std::endl;
