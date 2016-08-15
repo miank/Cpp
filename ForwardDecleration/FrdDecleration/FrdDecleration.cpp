@@ -7,10 +7,12 @@
 using namespace std;
 
 // Option 1
-int add(int x, int y)
-{
-	return x + y;
-}
+//int add(int x, int y)
+//{
+//	return x + y;
+//}
+
+int add(int x, int y);
 
 int main()
 {
@@ -18,4 +20,8 @@ int main()
     return 0;
 }
 
-
+// Option 2
+int add(int x, int y)
+{
+	return x + y;
+}
