@@ -17,5 +17,9 @@ int main()
 	cout << "float :\t\t " << sizeof(float) << " bytes" << endl;
 	cout << "double :\t\t " << sizeof(double) << " bytes" << endl;
 	cout << "long double :\t\t " << sizeof(long double) << " bytes" << endl;
+
+	// SizeOf
+	int x(0);
+	cout << "x is " << sizeof(x) << " bytes" << endl;
 	return 0;
 }
