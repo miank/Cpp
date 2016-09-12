@@ -295,3 +295,4 @@ Initialization/Initialization.sln
 stdafx/stdafx.cpp files
 *.stdafx.cpp
 
+*stdafx.cpp
