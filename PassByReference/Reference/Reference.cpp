@@ -5,10 +5,10 @@
 #include <iostream>
 using namespace std;
 
-void foo(int &y) // Y is reference variable
+void foo(int &y) // Y is reference variable , if you make y as const you can't change it.
 {
 	y = y + 1;
-}
+} // y is destroyed here
 
 int main()
 {
