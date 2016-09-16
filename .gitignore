@@ -294,3 +294,5 @@ stdafx/stdafx.cpp files
 *.stdafx.cpp
 
 *stdafx.cpp
+*targetver.h
+*stdafx.h
