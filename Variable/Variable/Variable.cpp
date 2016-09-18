@@ -25,20 +25,27 @@ int main()
 	int iValue1(5);
 
 	// Uniform Initialization
-	int iValue{ 5 };
+	int iValue2{ 5 };
 
 	// As per C++ new form of initialization that works for everything 
 	// Uniform Initialization
-	int iValue2{ 5 };
+	int iValue3{ 5 };
 
-	int iValue{}; // default initialization set to 0
+	int iValue4{}; // default initialization set to 0
 
 	// Variable assignment
-	int iValue;
-	iValue = 5; // Copy initialization
+	int iValue5;
+	iValue5 = 5; // Copy initialization
 
 	// Defining multiple variables
-	int a, b;
+	int a = 5, b = 6;
+	int c(7), d(8);
+	int e{ 9 }, f{ 10 };
+
+	int x;
+	int y;
+
+	// code
 
 
 
