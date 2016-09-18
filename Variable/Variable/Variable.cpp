@@ -46,9 +46,12 @@ int main()
 	int y;
 
 	// code
+	cout << "Enter a number " << endl;
+	cin >> x;
+	cout << "Enter another number " << endl;
+	cin >> y;
 
-
-
+	cout << "The Sum is : " << x + y << endl;
     return 0;
 }
 
