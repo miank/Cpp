@@ -25,6 +25,20 @@ int main()
 	double d1 = 3.3333333333333333333333333333333333333;
 	std::cout << d1 << std::endl;
 
+	float f3(123456789.0f); // f has 10 significant digits
+	std::cout << std::setprecision(9); // to show 9 digits in f
+	std::cout << f3 << std::endl;
+
+	double d2(1.0);
+	std::cout << d2 << std::endl;
+
+	double d3(0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1); // should equal 1.0
+	std::cout << d3 << std::endl;
+
+	double d4(0.1);
+	std::cout << d4 << std::endl; // use default cout precision of 6
+	std::cout << std::setprecision(17);
+	std::cout << d4 << std::endl;
 	return 0;
 }
 
