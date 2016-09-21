@@ -17,6 +17,19 @@ int main()
 	cout << ch3 << endl;
 	cout << ch4 << endl;
 	cout << 'b' << endl;
+	
+	// Type cast
+	char ch5(97);
+	cout << ch5 << endl;
+	cout << static_cast<int>(ch5) << endl;
+	cout << ch5 << endl;
+
+	// Inputting char 
+	cout << "Input a keyboard character " << endl;
+	char ch6;
+	cin >> ch6;
+	cout << ch6 << "has ASCII code " << static_cast<int>(ch6) << endl;
+
     return 0;
 }
 
