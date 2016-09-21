@@ -28,8 +28,15 @@ int main()
 	cout << "Input a keyboard character " << endl;
 	char ch6;
 	cin >> ch6;
-	cout << ch6 << "has ASCII code " << static_cast<int>(ch6) << endl;
+	cout << ch6 << " has ASCII code " << static_cast<int>(ch6) << endl;
 
+	// Input stored in buffer
+	cout << "Input a keyboard character " << endl;
+	char ch7;
+	cin >> ch7; // ch ='a', "bcd" is left in queue
+	cout << ch7 << " has ASCII code " << static_cast<int>(ch7) << endl;
+	cin >> ch7; // ch = 'b' , "cd is left in queue"
+	cout << ch7 << " " << static_cast<int>(ch7) << endl;
     return 0;
 }
 
