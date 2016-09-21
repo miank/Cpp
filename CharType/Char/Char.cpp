@@ -37,6 +37,11 @@ int main()
 	cout << ch7 << " has ASCII code " << static_cast<int>(ch7) << endl;
 	cin >> ch7; // ch = 'b' , "cd is left in queue"
 	cout << ch7 << " " << static_cast<int>(ch7) << endl;
+
+	cout << "Escape Sequences " << endl;
+	cout << "First Line \n Second Line" << endl;
+	cout << "First Line \t Second Line" << endl;
+
     return 0;
 }
 
