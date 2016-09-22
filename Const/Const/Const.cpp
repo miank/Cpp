@@ -21,6 +21,9 @@ int main()
 	cin >> age;
 	const int usersAge(age);
 
+	constexpr double gravity(9.8); //resolved at compile time
+	constexpr int sum = 4 + 7; // resolved at compile time
+
     return 0;
 }
 
