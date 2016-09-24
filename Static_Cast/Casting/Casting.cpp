@@ -1,4 +1,4 @@
-// Casting.cpp : Defines the entry point for the console application.
+// Casting.cpp : Casting of types.
 //
 
 #include "stdafx.h"
