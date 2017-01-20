@@ -38,6 +38,11 @@ int main()
 
 	int *const p = &a;
 	
+
+	// -----------------------------
+	int val = 11;
+	const int *pp = &val;
+	
 	
 
 
