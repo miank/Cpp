@@ -30,6 +30,18 @@ int main()
 	int *t = &a;
 	a = 12;
 
+	// const pointer 
+	int a = 11;
+	int b = 12;
+	const int *p2 = &b;
+	b = 13;
+
+	int *const p = &a;
+	
+	
+
+
+
 
 
 

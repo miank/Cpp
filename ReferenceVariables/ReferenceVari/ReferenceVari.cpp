@@ -29,12 +29,6 @@ int main()
 
 	cout << ref1 << endl;
 
-
-
-
-
-
-
     return 0;
 }
 
