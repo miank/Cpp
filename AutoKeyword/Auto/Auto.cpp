@@ -14,6 +14,10 @@ int add(int a, int b)
 {
 	return a + b;
 }
+// Other way to assign auto keyowrd. 
+
+auto add(int a, int b, int c);
+
 int main()
 {
 	auto sum = add(5, 6);
