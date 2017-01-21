@@ -1,5 +1,8 @@
-// Vectors.cpp : Defines the entry point for the console application.
-//
+// Vectors.cpp : Vector is a template based container that behaves just like a Dynamic Array.
+// It can expands its memory at run time and always store elements in contiguous memory location 
+// just like Array. We can store any type of element in vector by specifying the type as template argument.
+// Performance:
+// It Performs better if insertion and deletion is in end only and gives worst performance if insertion / deletion is at middle or at starting of vector.
 
 #include "stdafx.h"
 #include <iostream>
