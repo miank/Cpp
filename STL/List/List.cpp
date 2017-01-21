@@ -42,6 +42,12 @@ int main()
 	showlist(list2);
 	cout << "Reverse the list " << endl;
 	list1.reverse();
+	list2.reverse();
+	showlist(list1);
+	showlist(list2);
+	cout << "Sort the list " << endl;
+	list1.sort();
+	list2.sort();
 	showlist(list1);
 	showlist(list2);
     return 0;
