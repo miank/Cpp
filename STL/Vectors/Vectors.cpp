@@ -1,5 +1,11 @@
 // Vectors.cpp : Defines the entry point for the console application.
-//
+// Performance: It Performs better if insertion and deletion is in end only 
+// and gives worst performance if insertion / deletion is at middle or at starting of vector. 
+
+// Why Should I use std::vector ?
+// std::vector give same kind of fast performance in indexing and iterations as arrays.
+// But it dont have a Fixed Size limitaton like Arrays.You dont need to provide the fixed 
+// size for std::vector in advance.Just start inserting elements in std::vector and it will automatically expand its size.
 
 #include "stdafx.h"
 #include <iostream>
@@ -18,13 +24,25 @@ int main()
 	{
 		vectInts.push_back(i);
 	}
-
-
-
+	vector<int>::iterator it = vectInts.begin();
+	while (it != vectInts.end())
+	{
+		cout << *it << " ";
+		it++;
+	}
+	cout << endl;
+	cout << "........................." << endl;
 	for (int i = 0; i != 5; i++)
 	{
 		v1.push_back(i); 
 	}
+
+	// Initializing with default value
+	vector<int> vecI(5);
+	vector<string> vecStr(5, "Hi");
+
+
+
 	for (i = v1.begin(); i != v1.end(); i++)
 	{
 		cout << *i << endl;
