@@ -62,6 +62,13 @@ int main()
 	for (std::string str : vecStr)
 		std::cout << str << std::endl;
 
+	// Initialize with another vector 
+	vector<string> vecStr1;
+	vecStr1.push_back("Hi");
+	vecStr1.push_back("Hello");
+	vecStr1.push_back("Hey");
+	vecStr1.push_back("Hiiiii");
+	vector<string> vecst3(vecStr1);
 
 	for (i = v1.begin(); i != v1.end(); i++)
 	{
