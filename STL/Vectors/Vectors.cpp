@@ -10,6 +10,9 @@
 #include "stdafx.h"
 #include <iostream>
 #include <vector>
+#include <list>
+#include <string>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -40,7 +43,24 @@ int main()
 	// Initializing with default value
 	vector<int> vecI(5);
 	vector<string> vecStr(5, "Hi");
+	
+	cout << "Initialize the vector with an array " << endl;
+	string str[] = { "first", "Second", "third", "fourth" };
+	vector<string> vecStr(str, str + sizeof(str)/sizeof(string));
 
+	// Intialize vector with list 
+	cout << "Initialize string with list " << endl;
+	list<string> listStr;
+	listStr.push_back("first");
+	listStr.push_back("Second");
+	listStr.push_back("third");
+	listStr.push_back("fourth");
+	listStr.push_back("five");
+	listStr.push_back("size");
+
+	vector<string> vecStr(listStr.begin(), listStr.end());
+	for (std::string str : vecStr)
+		std::cout << str << std::endl;
 
 
 	for (i = v1.begin(); i != v1.end(); i++)
