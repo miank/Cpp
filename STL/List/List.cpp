@@ -107,7 +107,23 @@ int main()
 		std::ostream_iterator<int>(std::cout, " "));
 	std::cout << std::endl;
 
+	cout << "Remove elements while iterating " << endl;
+	list<int> list4({ 2, 3, 3, 4, 8, 9, 4, 6, 8, 3 });
+	list<int>::iterator it1 = list4.begin();
 
+	while (it1 != list4.end())
+	{
+		if ((*it1) % 3 == 0)
+			it = list4.erase(it1);
+		else
+			it1++;
+	}
+
+	// Iterate over the list using for_each & Lambda Function and display contents
+	std::for_each(list4.begin(), list4.end(), [](const int & val) {
+		std::cout << val << ",";
+	});
+	std::cout << std::endl;
     return 0;
 }
 
