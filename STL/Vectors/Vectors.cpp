@@ -15,6 +15,15 @@
 #include <iostream>
 using namespace std;
 
+struct Sample
+{
+	Sample(){}
+	Sample(const Sample &obj)
+	{
+		cout << "Sample copy constructor " << endl;
+	}
+};
+
 int main()
 {
 	vector<int> v1;
@@ -41,12 +50,12 @@ int main()
 	}
 
 	// Initializing with default value
-	vector<int> vecI(5);
-	vector<string> vecStr(5, "Hi");
+	vector<int> vec(5);
+	vector<string> vecStr5(5, "Hi");
 	
 	cout << "Initialize the vector with an array " << endl;
 	string str[] = { "first", "Second", "third", "fourth" };
-	vector<string> vecStr(str, str + sizeof(str)/sizeof(string));
+	vector<string> vecStr2(str, str + sizeof(str)/sizeof(string));
 
 	// Intialize vector with list 
 	cout << "Initialize string with list " << endl;
@@ -58,8 +67,8 @@ int main()
 	listStr.push_back("five");
 	listStr.push_back("size");
 
-	vector<string> vecStr(listStr.begin(), listStr.end());
-	for (std::string str : vecStr)
+	vector<string> vecStr3(listStr.begin(), listStr.end());
+	for (std::string str : vecStr3)
 		std::cout << str << std::endl;
 
 	// Initialize with another vector 
@@ -102,10 +111,38 @@ int main()
 	cout << "Front " << v2.front() << endl;
 	cout << "Back " << v2.back() << endl;
 
+	cout << ".................................................." << endl;
+	cout << "Vector capacity using struct " << endl;
 
+	vector<Sample> vecObj;
+	cout << "Capacity :: " << vecObj.capacity() << endl;
+	cout << "Size :: " << vecObj.size() << endl;
 
+	int capcity = vecObj.capacity();
+	
+	for (int i = 0; i < capcity + 1; i++)
+		vecObj.push_back(Sample());
+	cout << "After insertion " << endl;
+	cout << "Capacity :: " << vecObj.capacity() << endl;
+	cout << "Size :: " << vecObj.size() << endl;
+	cout << "After insertion + 1 " << endl;
+	for (int i = 0; i < capcity + 1; i++)
+		vecObj.push_back(Sample());
+	cout << "Capacity :: " << vecObj.capacity() << endl;
+	cout << "Size :: " << vecObj.size() << endl;
 
+	cout << "Adding element in vector using Push Back " << endl;
+	vector<string> vectStr;
+	cout << "Size of vector " << vectStr.size() << endl;
+	vectStr.push_back("AAAA");
+	vectStr.push_back("BBBB");
+	vectStr.push_back("CCCC");
+	vectStr.push_back("DDDD");
+	cout << "Size of vector after inserting string " << vectStr.size() << endl;
 
+	for (string data : vectStr)
+		cout << data << endl;
+	
 	return 0;
 }
 
