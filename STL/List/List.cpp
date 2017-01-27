@@ -50,6 +50,24 @@ int main()
 	list2.sort();
 	showlist(list1);
 	showlist(list2);
+	cout << endl;
+	cout << "List is similar to doubly linked list where data can be inserted either front or back ";
+	cout << endl;
+	list<int> objlist;
+	objlist.push_back(4);
+	objlist.push_back(3);
+	objlist.push_back(2);
+	objlist.push_back(1);
+
+	list<int>::iterator it = objlist.begin();
+	while (it != objlist.end())
+	{
+		cout << *it << endl;
+		it++;
+	}
+	cout << endl;
+	cout << "No random access of elements is possible in list because of non contiguos vectors ";
+
     return 0;
 }
 
