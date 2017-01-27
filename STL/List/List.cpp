@@ -4,6 +4,8 @@
 #include "stdafx.h"
 #include <iostream>
 #include <list>
+#include <algorithm>
+#include <iterator>
 #include <string>
 using namespace std;
 
@@ -67,6 +69,44 @@ int main()
 	}
 	cout << endl;
 	cout << "No random access of elements is possible in list because of non contiguos vectors ";
+	cout << endl;
+
+	cout << "Ways to initialize the list " << endl;
+	list<int> listInt;
+	for (int i = 0; i < 10; i++)
+	{
+		listInt.push_back(i);
+	}
+
+	for (int val : listInt)
+		cout << val << " ";
+	cout << endl;
+
+	cout << "Create and intialize " << endl;
+	list<int> listInt1(5, 120);
+	for (int val : listInt1)
+		cout << val << " ";
+	cout << endl;
+
+
+	list<int> list3({1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
+	//Display The List
+	std::copy(list3.begin(), list3.end(),
+		std::ostream_iterator<int>(std::cout, " "));
+	std::cout << std::endl;
+
+	cout << "Erasing elements " << endl;
+	// Iterator itList points to element next to begin
+	std::list<int>::iterator itList = ++(list3.begin());
+
+	// Erasing element represented by iterator itList i.e. 3
+	itList = list3.erase(itList);
+
+	//Display The List
+	std::copy(list3.begin(), list3.end(),
+		std::ostream_iterator<int>(std::cout, " "));
+	std::cout << std::endl;
+
 
     return 0;
 }
