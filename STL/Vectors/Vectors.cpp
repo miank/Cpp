@@ -138,6 +138,7 @@ int main()
 	vectStr.push_back("BBBB");
 	vectStr.push_back("CCCC");
 	vectStr.push_back("DDDD");
+	
 	cout << "Size of vector after inserting string " << vectStr.size() << endl;
 
 	for (string data : vectStr)
