@@ -36,6 +36,35 @@ int main()
 	cout << "Pop back ";
 	dq.pop_back();
 	showDeque(dq);
+
+	// Deque Operations 
+	cout << "Insert element in deque " << endl;
+	deque<int> deqObj;
+	deqObj.push_back(4);
+	deqObj.push_back(7);
+
+	cout << "Deque push back " << endl;
+	for (int i = 0; i < deqObj.size(); i++)
+	{
+		cout << deqObj[i] << " ";
+	}
+	cout << endl;
+	cout << "Deque push front " << endl;
+	deqObj.push_front(2);
+	deqObj.push_front(4);
+
+	for (int i = 0; i < deqObj.size(); i++)
+	{
+		cout << deqObj[i] << endl;
+	}
+
+	cout << "Element in front " << endl;
+	cout << deqObj.front();
+	cout << "Remove from front " << endl;
+	deqObj.pop_front();
+	for (int i = 0; i< deqObj.size(); i++)
+		std::cout << deqObj[i] << " ";
+
     return 0;
 }
 
