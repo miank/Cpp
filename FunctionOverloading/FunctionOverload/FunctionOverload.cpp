@@ -32,6 +32,15 @@ public:
 	//{
 	//	cout << a << " " << b << endl;
 	//}
+
+	int print() { return 11; }
+	// char print() { return 'a'; } // function can't be overloaded based on return type
+	int print(int *ptr) { return 11; } // pointer with array function are overloaded.
+	// int print(int arr[]) { return 11; }
+	int main() // main i not a keyword in C++ or any other language
+	{
+		return 2;
+	}
 };
 
 int main()
