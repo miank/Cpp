@@ -15,6 +15,17 @@ void fun1(const char *a)  // this function can change the value
 	cout << "const func" << endl;
 }
 
+//int sum(int x, int a = 10)  // Based on default arguments the function can't be loaded.
+//{
+//	return a;
+//}
+//
+//int sum(int y = 2,int a = 10)
+//{
+//	return a;
+//}
+
+
 int main()
 {
 	const char *c = "Geeks For Geeks";
