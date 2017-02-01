@@ -41,6 +41,14 @@ public:
 	{
 		return 2;
 	}
+	int foo1()
+	{
+		return 10;
+	}
+	//int foo1()   // Method overloading does not depend on return type.
+	//{
+	//	return 20;
+	//}
 };
 
 int main()
