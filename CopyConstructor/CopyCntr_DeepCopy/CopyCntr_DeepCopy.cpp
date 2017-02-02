@@ -11,16 +11,25 @@ class String
 	int size;
 public:
 	String(const char *str = nullptr);
-	~String()
-	{
-		delete[] s;
-	}
+
+	~String() { delete[] s;	}
+	
 	String(const String&); // copy constructor
+	
 	void print()
 	{
 		cout << s << endl;
 	}
+	
 	void change(const char *c);  // function to change
+};
+
+// Call to constructor and destructor explicitly 
+class Test 
+{
+public:
+	Test() { cout << "I am Test Constructor " << endl; }
+	~Test() { cout << "I am Test Destructor" << endl; }
 };
 
 String::String(const char *str)
@@ -58,6 +67,9 @@ int main()
 
 	str1.print(); // what is printed now ?
 	str2.print();
+	Test();
+	Test t;
+	t.~Test();
 	return 0;
 }
 
