@@ -15,6 +15,9 @@ int main()
 {
 	cout << max(2, 4) << endl;
 	cout << max('a', 'b') << endl;
+	cout << max<int>(3, 8) << endl;
+	cout << max<double>(3.5, 2.4) << endl;
+
     return 0;
 }
 
