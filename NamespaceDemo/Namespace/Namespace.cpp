@@ -49,6 +49,17 @@ void ns3::display()
 	cout << "Display " << endl;
 }
 
+// nested namespace
+namespace outer
+{
+	int x = 10;
+	namespace inner
+	{
+		int z = x;
+	}
+}
+
+
 
 int main()
 {
@@ -60,6 +71,7 @@ int main()
 	ns3::Test Obj;
 	Obj.Display();
 	ns3::display();
+	cout << outer::inner::z << endl;
 	return 0;
 }
 
