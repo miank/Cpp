@@ -24,12 +24,12 @@ class Person
 	unsigned age_ = 22;
 public:
 	int i;
-	unsigned age() const // getter accesser
+	unsigned age() const // getter / accesser
 	{
 		return age_;
 	}
 
-	void set_age(unsigned a) //setter or mutator
+	void set_age(unsigned a) //setter / mutator
 	{
 		age_ = a;
 	}
