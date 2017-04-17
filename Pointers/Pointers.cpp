@@ -19,14 +19,19 @@ int main()
 	*ptr = 20;
 	cout << *ptr << " " << ptr << endl;
 
+	int v[3] = { 10, 20, 30 };
+	int *ptr1 = v;
 
+	for (int i= 0; i < 3; i++)
+	{
+		cout << *ptr1 << " "<< ptr1 << endl;
+		ptr1++;
+	}
 
+	int *ptr2;
+	ptr2 = v;
 
-
-
-
-
-
+	cout << "Elements of the array are " << ptr2[0] << " " << ptr2[1] << " " << ptr2[2] << endl;
 
     return 0;
 }
