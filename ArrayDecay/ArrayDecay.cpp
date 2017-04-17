@@ -18,6 +18,17 @@ void pDecay(int (*p)[7])
 	cout << sizeof(p) << endl;
 }
 
+
+// A function that prevents Array decay
+// by passing array by reference
+void fun(int(&p)[7])
+{
+	// Printing size of array
+	cout << "Modified size of array by "
+		"passing by reference: ";
+	cout << sizeof(p) << endl;
+}
+
 int main()
 {
 	int arr[7] = { 1, 2, 3, 4, 5, 6, 7 };
@@ -29,6 +40,9 @@ int main()
 
 	// calling function by pointer
 	pDecay(&arr);
+
+	// best way to prevent is passing by reference
+	fun(arr);
 
     return 0;
 }
