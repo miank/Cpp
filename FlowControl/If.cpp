@@ -20,6 +20,9 @@ int main()
 		cout << "is not larger than ";
 	}
 	cout << y << endl;
+
+	if (x + y > 10)
+		cout << "thanks for choosing large numbers!" << endl;
     return 0;
 }
 
