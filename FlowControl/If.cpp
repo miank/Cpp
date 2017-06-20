@@ -49,7 +49,29 @@ int main()
 	else
 		cout << "not prime " << endl;
 
+	////////////////// For Loop ////////////////////////
+	int x2;
+	cout << "Enter a number " << endl;
+	cin >> x2;
 
+	bool prime1 = true;
+	int i1 = 2;
+
+	for (int i = 2; i <= x / i; i++)
+	{
+		int factor1 = x2 / i1;
+		if (factor1 * i1 == x2)
+		{
+			cout << "factor found: " << factor1 << endl;
+			prime1 = false;
+			break;
+		}
+	}
+	cout << x2 << " is ";
+	if (prime1)
+		cout << "prime " << endl;
+	else
+		cout << "not prime " << endl;
     return 0;
 }
 
