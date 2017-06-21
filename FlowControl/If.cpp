@@ -72,6 +72,33 @@ int main()
 		cout << "prime " << endl;
 	else
 		cout << "not prime " << endl;
+
+	// Switch Statement
+	int z;
+	cout << "Enter a number, 0 to quit " << endl;
+	cin >> z;
+	while (z > 0)
+	{
+		switch (z)
+		{
+		case 1: cout << "you entered 1" << endl;
+			break;
+		case 2:
+		case 3:cout << "you entered 2 or 3" << endl;
+			break;
+		case 4: cout << "you entered 4" << endl;
+		case 5: cout << "you entered 5" << endl;
+			break;
+		default:
+			cout << "You enterted other than 1 - 5 " << endl;
+		}
+		cout << "Enter a number, 0 to quit " << endl;
+		cin >> z;
+	}
+
+
+
+
     return 0;
 }
 
