@@ -2,6 +2,7 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
@@ -73,7 +74,18 @@ int main()
 	else
 		cout << "not prime " << endl;
 
-	// Switch Statement
+	/////////////////////// Immediate If ////////////////////////
+	int a = 99;
+	while (a > 0)
+	{
+		cout << "Enter a number, 0 to quit " << endl;
+		cin >> a;
+		string sign = a > 0 ? "positive " : "0 or negative";
+		cout << "your number is " << sign << endl;
+	}
+
+
+	//////////////////// Switch Statement //////////////////////////
 	int z;
 	cout << "Enter a number, 0 to quit " << endl;
 	cin >> z;
@@ -95,9 +107,6 @@ int main()
 		cout << "Enter a number, 0 to quit " << endl;
 		cin >> z;
 	}
-
-
-
 
     return 0;
 }
