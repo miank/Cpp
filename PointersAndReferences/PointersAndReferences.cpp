@@ -1,7 +1,8 @@
-// PointersAndReferences.cpp 
+// PointersAndReferences.cpp - Learning from pluralsight
 
 #include "stdafx.h"
 #include <iostream>
+#include "Person.h"
 using namespace std;
 
 int main()
@@ -15,7 +16,23 @@ int main()
 	pA = &b;
 	(*pA)++;
 	cout << "a is " << a << ", *pA " << *pA << endl;
-	
-    return 0;
-}
 
+	Person Kate("Kate", "Gregory", 1234);
+	Person *pKate = &Kate;
+
+	//cout << "Kate " << pKate->GetName() << pKate->GetNumber() << endl;
+	pKate->SetNumber(235);
+
+	cout << "Kate: " << Kate.GetName() << " " << Kate.GetNumber() << endl;
+	cout << "pKate: " << pKate->GetName() << " " << pKate->GetNumber() << endl;
+
+	int& rA = a;
+	rA = 5;
+	cout << "a is " << a << endl;
+
+	Person& rKate = Kate;
+	rKate.SetNumber(345);
+	cout << "rKate: " << rKate.GetName() << " " << rKate.GetNumber() << endl;
+
+	return 0;
+}
