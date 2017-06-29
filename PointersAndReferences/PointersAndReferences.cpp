@@ -34,5 +34,12 @@ int main()
 	rKate.SetNumber(345);
 	cout << "rKate: " << rKate.GetName() << " " << rKate.GetNumber() << endl;
 
+	int *badPointer = nullptr; // After adding program will not crash
+	// if uninitialized then it will crash
+	if (badPointer) 
+	{
+		badPointer = nullptr; // error it takes only address
+		cout << *badPointer << endl; // program crashes
+	}
 	return 0;
 }
