@@ -41,5 +41,10 @@ int main()
 		badPointer = nullptr; // error it takes only address
 		cout << *badPointer << endl; // program crashes
 	}
+
+	int& badReference;
+	badReference = 3;
+	cout << badReference << endl;
+
 	return 0;
 }
