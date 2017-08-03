@@ -11,7 +11,7 @@ int main()
 
 	int i;
 	// fractional part will be lost
-	i = 4.9;
+	i = static_cast<int>(4.9);
 	cout << i << endl;
 
 	cout << i << endl;
@@ -19,7 +19,7 @@ int main()
 	cout << j << endl;
 
 	auto f = 4.9;
-	j = f;
+	j =static_cast<int>(f);
 	cout << f << endl;
 	f = 9.0 / 5;
 	cout << f << endl;
