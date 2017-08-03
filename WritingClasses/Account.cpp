@@ -15,7 +15,7 @@ vector<string> Account::Report()
 	{
 		report.push_back(t.Report());
 	}
-	report.push_back("--------------------------");
+	report.push_back("--------------------------------");
 	return report;
 }
 
