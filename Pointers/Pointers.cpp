@@ -33,6 +33,14 @@ int main()
 
 	cout << "Elements of the array are " << ptr2[0] << " " << ptr2[1] << " " << ptr2[2] << endl;
 
+	// ----------------------------------------------------------------------------------------
+	int a; 
+	&a; // Address
+	int *b = nullptr; // declaring a integer pointer 
+	double *d = nullptr; // declaring the double pointer
+	float *f(nullptr);
+
+
     return 0;
 }
 
