@@ -4,7 +4,8 @@
 #include <iostream>
 #include "Person.h"
 #include "Tweeter.h"
-using namespace std;
+using std::cout;
+using std::endl;
 
 int main()
 {
