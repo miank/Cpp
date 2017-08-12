@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Person.h"
 #include "Tweeter.h"
+#include "Status.h"
 using std::cout;
 using std::endl;
 
@@ -16,6 +17,9 @@ int main()
 	}
 
 	cout << "After innermost block " << endl;
+	Status s = Pending;
+	s = Approved;
+
 
 
     return 0;
