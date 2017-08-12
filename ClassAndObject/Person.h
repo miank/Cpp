@@ -4,10 +4,10 @@
 class Person
 {
 private:
-	std::string firstName;
-	std::string lastName;
+	string firstName;
+	string lastName;
 	int arbitaryNumber;
 public:
-	Person(std::string fName, std::string lName, int arbitary);
+	Person(string fName, string lName, int arbitary);
 	~Person();
 };
