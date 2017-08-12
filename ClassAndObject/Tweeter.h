@@ -1,10 +1,12 @@
 #pragma once
 #include "Person.h"
-class Tweeter :
-	public Person
+#include <string>
+
+class Tweeter : public Person
 {
+	std::string twitterhandle;
 public:
-	Tweeter();
+	Tweeter(std::string fName, std::string lName, int arbitary, std::string handle);
 	~Tweeter();
 };
 
