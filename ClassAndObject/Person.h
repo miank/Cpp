@@ -10,8 +10,5 @@ private:
 
 public:
 	Person(std::string fName, std::string lName, int arbitary);
-
-
-
-
+	~Person();
 };
