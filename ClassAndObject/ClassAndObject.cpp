@@ -2,7 +2,6 @@
 
 #include "stdafx.h"
 #include <iostream>
-#include "Person.h"
 #include "Tweeter.h"
 #include "Status.h"
 using std::cout;
