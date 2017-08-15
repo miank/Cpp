@@ -9,7 +9,10 @@ int main()
 	cout << "Hello !" << endl << 2 + 2;
 	cout << endl;
 
-	int i;
+	// old way of casting
+	int i = (int) 4.9;
+
+	// New version of casting
 	// fractional part will be lost
 	i = static_cast<int>(4.9);
 	cout << i << endl;
